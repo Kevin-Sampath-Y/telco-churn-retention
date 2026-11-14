@@ -1,0 +1,111 @@
+{
+  "selected_model": "XGBoost",
+  "comparison": [
+    {
+      "model": "Baseline (predict base rate)",
+      "cv_roc_auc": 0.5,
+      "test_roc_auc": 0.5,
+      "test_pr_auc": 0.2654,
+      "test_brier": 0.195,
+      "best_params": {},
+      "seconds": 0.1
+    },
+    {
+      "model": "Logistic regression",
+      "cv_roc_auc": 0.846,
+      "test_roc_auc": 0.8413,
+      "test_pr_auc": 0.6272,
+      "test_brier": 0.1385,
+      "best_params": {
+        "C": 10
+      },
+      "seconds": 8.1
+    },
+    {
+      "model": "Random forest",
+      "cv_roc_auc": 0.8474,
+      "test_roc_auc": 0.8436,
+      "test_pr_auc": 0.6552,
+      "test_brier": 0.136,
+      "best_params": {
+        "n_estimators": 400,
+        "min_samples_leaf": 20,
+        "max_depth": 12
+      },
+      "seconds": 17.2
+    },
+    {
+      "model": "XGBoost",
+      "cv_roc_auc": 0.8504,
+      "test_roc_auc": 0.8471,
+      "test_pr_auc": 0.6654,
+      "test_brier": 0.1346,
+      "best_params": {
+        "colsample_bytree": 0.5499874579090014,
+        "learning_rate": 0.05758095819586592,
+        "max_depth": 2,
+        "min_child_weight": 4,
+        "n_estimators": 231,
+        "reg_lambda": 5.517373513159164,
+        "subsample": 0.6225646316108401
+      },
+      "seconds": 21.9
+    }
+  ],
+  "n_train": 5634,
+  "n_test": 1409,
+  "base_rate": 0.2654,
+  "features": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges",
+    "n_addons",
+    "avg_monthly_charge",
+    "price_change",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "autopay"
+  ],
+  "versions": {
+    "python": "3.13.14",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4"
+  },
+  "operating_threshold": 0.19,
+  "test_metrics": {
+    "threshold": 0.19,
+    "roc_auc": 0.8471,
+    "pr_auc": 0.6654,
+    "brier": 0.1346,
+    "accuracy": 0.7026,
+    "precision": 0.4672,
+    "recall": 0.8583,
+    "f1": 0.6051,
+    "confusion": [
+      [
+        669,
+        366
+      ],
+      [
+        53,
+        321
+      ]
+    ]
+  },
+  "synthetic": false
+}

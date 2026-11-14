@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+# raw data is downloaded by src/download_data.py, never committed
+data/raw/*.csv
+data/raw/_SYNTHETIC_DATA.txt

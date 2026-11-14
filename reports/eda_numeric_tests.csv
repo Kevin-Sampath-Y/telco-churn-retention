@@ -1,0 +1,4 @@
+feature,median_churned,median_stayed,rank_biserial,p_value
+tenure,10.0,38.0,-0.48,2.419635517951866e-208
+MonthlyCharges,79.7,64.4,0.242,3.311627651988585e-54
+TotalCharges,703.5,1679.5,-0.301,5.685033866207314e-83

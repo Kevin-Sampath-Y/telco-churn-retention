@@ -1,0 +1,108 @@
+{
+  "selected_model": "XGBoost",
+  "test": {
+    "threshold": 0.19,
+    "roc_auc": 0.8471,
+    "pr_auc": 0.6654,
+    "brier": 0.1346,
+    "accuracy": 0.7026,
+    "precision": 0.4672,
+    "recall": 0.8583,
+    "f1": 0.6051,
+    "confusion": [
+      [
+        669,
+        366
+      ],
+      [
+        53,
+        321
+      ]
+    ]
+  },
+  "assumptions": {
+    "horizon_months": 12,
+    "gross_margin": 0.5,
+    "offer_cost": 30.0,
+    "save_rate": 0.3
+  },
+  "strategy_backtest": [
+    {
+      "strategy": "Do nothing",
+      "customers_contacted": 0,
+      "net_profit": 0.0
+    },
+    {
+      "strategy": "Contact everyone",
+      "customers_contacted": 1409,
+      "net_profit": 6716.819999999998
+    },
+    {
+      "strategy": "Contact a random group of the same size",
+      "customers_contacted": 573,
+      "net_profit": 2731.538580553583
+    },
+    {
+      "strategy": "Contact top by churn probability (same size)",
+      "customers_contacted": 573,
+      "net_profit": 22615.920000000002
+    },
+    {
+      "strategy": "Model: contact only where expected benefit > 0",
+      "customers_contacted": 573,
+      "net_profit": 23644.17
+    }
+  ],
+  "model_comparison": [
+    {
+      "model": "Baseline (predict base rate)",
+      "cv_roc_auc": 0.5,
+      "test_roc_auc": 0.5,
+      "test_pr_auc": 0.2654,
+      "test_brier": 0.195,
+      "best_params": {},
+      "seconds": 0.1
+    },
+    {
+      "model": "Logistic regression",
+      "cv_roc_auc": 0.846,
+      "test_roc_auc": 0.8413,
+      "test_pr_auc": 0.6272,
+      "test_brier": 0.1385,
+      "best_params": {
+        "C": 10
+      },
+      "seconds": 8.1
+    },
+    {
+      "model": "Random forest",
+      "cv_roc_auc": 0.8474,
+      "test_roc_auc": 0.8436,
+      "test_pr_auc": 0.6552,
+      "test_brier": 0.136,
+      "best_params": {
+        "n_estimators": 400,
+        "min_samples_leaf": 20,
+        "max_depth": 12
+      },
+      "seconds": 17.2
+    },
+    {
+      "model": "XGBoost",
+      "cv_roc_auc": 0.8504,
+      "test_roc_auc": 0.8471,
+      "test_pr_auc": 0.6654,
+      "test_brier": 0.1346,
+      "best_params": {
+        "colsample_bytree": 0.5499874579090014,
+        "learning_rate": 0.05758095819586592,
+        "max_depth": 2,
+        "min_child_weight": 4,
+        "n_estimators": 231,
+        "reg_lambda": 5.517373513159164,
+        "subsample": 0.6225646316108401
+      },
+      "seconds": 21.9
+    }
+  ]
+}

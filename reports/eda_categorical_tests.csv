@@ -1,0 +1,17 @@
+feature,cramers_v,p_value,highest_churn_group,highest_rate,lowest_churn_group,lowest_rate
+Contract,0.41,5.863038300673391e-258,Month-to-month,0.427,Two year,0.028
+OnlineSecurity,0.347,2.661149635176552e-185,No,0.418,No internet service,0.074
+TechSupport,0.343,1.4430840279998987e-180,No,0.416,No internet service,0.074
+InternetService,0.322,9.571788222840544e-160,Fiber optic,0.419,No,0.074
+PaymentMethod,0.303,3.6823546520097993e-140,Electronic check,0.453,Credit card (automatic),0.152
+OnlineBackup,0.292,2.0797592160864276e-131,No,0.399,No internet service,0.074
+DeviceProtection,0.282,5.505219496457244e-122,No,0.391,No internet service,0.074
+StreamingMovies,0.231,2.667756755723681e-82,No,0.337,No internet service,0.074
+StreamingTV,0.231,5.528994485739183e-82,No,0.335,No internet service,0.074
+autopay,0.21,3.027872572285947e-69,No,0.347,Yes,0.16
+PaperlessBilling,0.191,4.073354668665985e-58,Yes,0.336,No,0.163
+Dependents,0.164,4.9249216612154196e-43,No,0.313,Yes,0.155
+Partner,0.15,2.1399113440759935e-36,No,0.33,Yes,0.197
+SeniorCitizen,0.15,1.510066805092378e-36,Yes,0.417,No,0.236
+MultipleLines,0.04,0.0034643829548773003,Yes,0.286,No phone service,0.249
+PhoneService,0.011,0.3387825358066928,Yes,0.267,No,0.249

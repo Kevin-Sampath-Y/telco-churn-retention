@@ -1,0 +1,6 @@
+strategy,customers_contacted,net_profit
+Do nothing,0,0.0
+Contact everyone,1409,6716.819999999998
+Contact a random group of the same size,573,2731.538580553583
+Contact top by churn probability (same size),573,22615.920000000002
+Model: contact only where expected benefit > 0,573,23644.17
