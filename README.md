@@ -2,6 +2,8 @@
 
 > Predict which telecom customers are about to leave, explain **why**, and decide **who is worth spending retention money on**. Includes a tested ML pipeline and an interactive Streamlit app.
 
+**Streamlit App link:** https://telco-customer-churn-retention.streamlit.app/ 
+
 **Tech:** Python · pandas · scikit-learn · XGBoost · SHAP · SciPy · Streamlit · pytest
 
 ## The business problem
@@ -140,4 +142,4 @@ IBM sample dataset "Telco Customer Churn" (public, widely used for teaching). Th
 
 ## Author
 
-Kevin Sampath · AI & Data Science student
+Kevin Sampath Y
